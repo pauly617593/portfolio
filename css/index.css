@@ -1,0 +1,280 @@
+
+  @import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+  
+  .navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+  }
+  
+  li a:hover:not(.active) {
+    background-color: black;
+  }
+
+
+  /* navigation bar css */
+
+  .start_header {
+    background-image: url('../img/city.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px;
+    background-position: center;
+    opacity: 1;  
+
+  }
+
+  .project_card {
+    background-image: url('../img/code.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px;
+    background-position: center;
+    opacity: 1;  
+
+  }
+/* First landing page */ 
+
+.about {
+  background-image: url('../img/mac.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 500px;
+  background-position: center;
+  opacity: 1;
+}
+/* Second landing page */ 
+.contact {
+  background-image: url('../img/earth.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 500px;
+  background-position: center; 
+}
+/* Third landing page */ 
+
+
+ * {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 50px auto 0;
+  display: table;
+  box-sizing: border-box;
+
+}
+
+h1 {
+  font-size:xx-small;
+}
+
+/*  Column 1 style  calculator project*/
+.column1 {
+  float: left;
+  position: relative;
+    color: initial;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px;
+    background-image: url('../img/Cals.jpeg');
+    border-radius: 5px;
+    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1) 0s;
+    margin: 0 15px 25px;
+    border-radius:10px;
+    border-right: 10px;
+    vertical-align: middle;
+    display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  background-size: 400px 200px;  
+  background-repeat: no-repeat;
+  table-layout: fixed;
+  
+ 
+}
+
+/*  column 2 Style */
+.column2 {
+  float: left;
+  position: relative;
+    color: initial;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px;
+    background-image: url('../img/heart.jpeg');
+    border-radius: 5px;
+    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1) 0s;
+    margin: 0 15px 25px;
+    border-radius:10px;
+    border-right: 10px;
+    vertical-align: middle;
+    display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  background-size: 400px 200px;  
+  background-repeat: no-repeat;
+  table-layout: fixed;
+}
+
+/*  column 3 Style */
+.column3 {
+  float: left;
+  position: relative;
+    color: initial;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px;
+    background-image: url('../img/inky.jpg');
+    border-radius: 5px;
+    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1) 0s;
+    margin: 0 15px 25px;
+    border-radius:10px;
+    border-right: 10px;
+    vertical-align: middle;
+    display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  background-size: 400px 200px;  
+  background-repeat: no-repeat;
+  table-layout: fixed;
+  background-position: center;
+}
+
+/*  column 4 Style */
+.column4 {
+  float: left;
+  position: relative;
+    color: initial;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px;
+    background-color: ivory;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1) 0s;
+    margin: 0 15px 25px;
+    border-radius:10px;
+    border-right: 10px;
+    vertical-align: middle;
+    display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+
+
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+/* Clear floats after the columns */
+}
+
+/* Responsive columns */
+@media (max-width: 600px) {
+  .grid .setup {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 32px 24px 24px;
+    
+  }
+}
+
+@media screen and (max-width: 768px ){
+  .navbar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px){
+  .grid .setup {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+  
+  /* removes style list . */ 
+  .formholder li {
+      list-style-type: none;
+      
+  }
+  
+  .formholder label {
+    color: #666;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    padding: 5px;
+  
+  
+}
+
+
+
+  /* contact form shape */
+  #name, #email {
+    width: 400px;
+    height: 40px;
+    margin-left: -49px;
+    padding-left: 5px;
+    color: #666;
+    border: 1px solid rgba(204, 204, 204, .5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    opacity: .5;
+
+   
+   }
+  
+  #message {
+    resize: none;
+    width: 400px;
+    height: 200px;
+    margin-left: -49px;
+    margin-bottom: -5px;
+    padding-left: 5px;
+    color: #666;
+    border:1px solid rgba(204, 204, 204, .5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    opacity: .5;
+   
+  }
+  
+
+  #button:hover {
+    background: #f7941d;
+    color: #fff;
+  }
+
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px 50px;
+    
+   
+  }
